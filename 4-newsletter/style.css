@@ -1,1 +1,56 @@
 /* write your css here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 10%;
+}
+
+.container {
+    width: 1200px;
+    /* height: 50vh; */
+    margin: 0 auto;
+    padding: 10%;
+    background-image: linear-gradient(#021526, #03346E);
+}
+
+.main-heading {
+    width: 600px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.intro {
+    text-align: center;
+    width: 500px;
+    margin-left: 160px;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: #868e96;
+}
+
+.search-box {
+    height: 40px;
+    width: 350px;
+    margin-left: 21%;
+    margin-top: 3%;
+    font-size: 12px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 10px;
+    caret-color: white;
+    color: white;
+}
+
+.notify-btn {
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
