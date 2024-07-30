@@ -1,1 +1,182 @@
 /* write your css here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 1200px;
+    margin: 10px auto;
+    background-color: #f1f3f5;
+}
+
+.container {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.main-logo {
+    width: 30px;
+    height: 20px;
+}
+
+.heading {
+    margin-bottom: 50px;
+    display: flex;  
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.registration-form {
+    background-color: #fff;
+    height: 650px;
+    width: 700px;
+    margin: 0 auto;
+    padding: 100px;
+    border: none;
+    box-shadow: 0 1px 2px 0.001px;
+    border-radius: 10px;
+}
+
+
+.input-fields {
+    font-size: 16px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.inp {
+    height: 40px;
+    width: 100%;
+    border: 0.5px solid #adb5bd;
+    border-radius: 10px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    float: left;
+    font-weight: bold;
+    color: #343a40;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.remember-me-btn {
+    height: 15px;
+    width: 15px;
+}
+
+.forgot-pswd-link {
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    font-weight: bold;
+    color: #364fc7;
+}
+
+.submit-div {
+    margin: 20% auto;
+    margin-bottom: 10%;
+}
+
+.submit-btn {
+    color: white;
+    padding: 20px 50px;
+    background-color: #364fc7;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.or-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.line {
+    width: 30%;
+}
+
+.or-btn-sec {
+    display: flex;
+    height: 60px;
+    width: 150px;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.login-option-icon {
+    height: 50px;
+    width: 30px;   
+}
+
+.or-btn {
+    height: 50px;
+    width: 240px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tw-or-btn {
+    background-color: #1DA1F2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.git-or-btn {
+    background-color:#24292e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.trial-sec {
+    margin-top: 60px;
+}
+
+.trial-ad {
+    font-size: 16px;
+    color: #868e96;
+    font-weight: bold;
+}
+
+.trial-link {
+    text-decoration: none;
+    color: #364fc7;
+}

@@ -49,6 +49,10 @@
     position: relative;
 }
 
+hr {
+    border-top: 1px solid #868e96;
+}
+
 .date-tag {
     margin-bottom: 20px;
 }
