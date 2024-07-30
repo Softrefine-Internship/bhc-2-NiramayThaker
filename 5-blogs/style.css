@@ -1,1 +1,113 @@
 /* write your css here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Main header section */
+.container {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.main-heading {
+    font-size: 38px;
+    font-weight: bold;  
+    color: #343a40;
+}
+
+.main-desc {
+    margin-top: 10px;
+    color: #868e96;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.blog {
+    display: flex;
+}
+
+/* Blog section  */
+.blog-img {
+    height: 300px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.blog-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    position: relative;
+}
+
+.date-tag {
+    margin-bottom: 20px;
+}
+
+.blog-date {
+    color: #868e96;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+.tag {
+    background-color: #f1f3f5;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #343a40;
+}
+
+
+.blog-heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.blog-desc {
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #868e96;
+    font-size: 16px;
+}
+
+/* Post author style  */
+.post-author {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-img {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.author-reg {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.author-name {
+    font-weight: bold;
+}
+.author-desc {
+    color: #868e96;
+}
