@@ -1,1 +1,80 @@
 /* write your css here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.user-info {
+    position: relative;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.username {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+.desc {
+    margin-top: 35px;
+    margin-left: -6.2%;
+    font-size: 16px;
+    color: #868e96;
+}
+
+.add-user-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    background-color: #3b5bdb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.data-table {
+    margin-top: 45px;
+}
+
+th {
+    color: #343a40;
+}
+
+th, td {
+    text-align: start;
+    border-bottom: 1px solid #ced4da;
+    padding: 20px 0;
+}
+
+td {
+    color: #868e96;
+}
+a:link {
+    text-decoration: none;
+    color: #3b5bdb;
+}
+
+table {
+    text-align: start;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
