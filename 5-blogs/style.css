@@ -9,13 +9,15 @@
 /* Main header section */
 .container {
     width: 1200px;
-    margin: 50px auto;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .main-heading {
     font-size: 38px;
     font-weight: bold;  
     color: #343a40;
+    margin-top: 30px;
 }
 
 .main-desc {
@@ -28,7 +30,7 @@
 .blog-section {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
 }
 
 .blog {
@@ -38,8 +40,9 @@
 /* Blog section  */
 .blog-img {
     height: 300px;
-    width: 400px;
+    width: 300px;
     border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .blog-right {
@@ -47,6 +50,7 @@
     flex-direction: column;
     margin-left: 35px;
     position: relative;
+    margin-top: 10px;
 }
 
 hr {
@@ -69,6 +73,13 @@ hr {
     border-radius: 25px;
     font-size: 14px;
     color: #343a40;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tag:hover {
+    background-color: #000;
+    color: white;
 }
 
 

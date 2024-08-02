@@ -7,13 +7,58 @@
 }
 
 .container {
+    width: 1200px;
     height: 100vh;
-    background-image: linear-gradient(white, #d0ebff);
+    margin: 0 auto;
+    position: relative;
+    /* background-image: linear-gradient(white, #d0ebff); */
 }
 
 /* Navbar */
 .main-nav {
     display: flex;
+}
+
+.blur-clr {
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.blur-clr--blue {
+    height: 400px;
+    background-color: rgba(123, 22, 238, 0.1);
+    filter: blur(40px);
+    -webkit-filter: blur(50px);
+    top: 4.5%;
+    right: 40%;
+}
+
+.blur-clr--pink{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(238, 22, 238, 0.1);
+    filter: blur(40px);
+    -webkit-filter: blur(50px);
+    top: 20%;
+    left: 20%;
+}
+
+.blur-clr--pink-down {
+    background-color: rgba(238, 22, 238, 0.1);
+    filter: blur(40px);
+    -webkit-filter: blur(30px);
+    right: 0;
+    bottom: 0;
+}
+
+.blur-clr--dark-pink {
+    background-color: rgba(255, 7, 28, 0.1);
+    filter: blur(40px);
+    -webkit-filter: blur(100px);
+    top: -1%;
+    left: -2%;
 }
 
 .logo {
@@ -24,28 +69,43 @@
 
 .main-nav-ele {
     margin: 40px auto;
+    /* position: absolute; */
 }
 
-.nav-element {
+.nav-elements {
     margin-left: 50px;
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
+.nav-elements:hover {
+    color: #1098ad;
+}
+
 .login-btn {
-    padding: 30px;
+    justify-content: center;
+    padding: 35px;
     margin-right: 10px;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    text-align: center;   
 }
 
+.login-btn:hover {
+    color: #1098ad;
+}
 
 /* hero section */
 .hero-section {
-    width: 1200px;
-    margin: 12% auto;
+    height: 80vh;
+    /* width: 1200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 12% auto; */
 }
 
 .read-more {
@@ -66,22 +126,28 @@
     color: #1098ad;
 }
 
+.read-more:hover {
+    color: #0a0e20;
+}
+
 .main-heading {
     color: #212529;
     font-size: 58px;
     width: 600px;
     text-align: center;
     margin: 30px auto;
+    letter-spacing: -1px;
 }
 
 .info-text {
-    color: #868e96;
+    color: #292a2c;
     width: 700px;
     margin: 0 auto;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
-    font-weight: none;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .btn {
@@ -97,10 +163,20 @@
     border-radius: 5px;
     font-weight: bold;
     margin-right: 25px;
+    cursor: pointer;
+}
+
+.get-started:hover {
+    transition-delay:0.10s;
+    background-color: #0a0e20;
 }
 
 .learn-more {
     text-decoration: none;
     color: #212529;
     font-weight: bold;
+}
+
+.learn-more:hover{
+    color: #646fa3;
 }

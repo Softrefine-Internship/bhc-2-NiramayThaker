@@ -17,6 +17,10 @@
     text-align: center;
 }
 
+hr {
+    border-left: 1px solid #eef0f1;
+}
+
 .pricing-tag {
     font-size: 14px;
     font-weight: bold;
@@ -26,7 +30,7 @@
 
 .main-heading {
     font-size: 48px;
-    color: #212529;
+    color: #343a40;
     margin-bottom: 20px;
 }
 
@@ -40,25 +44,25 @@
 .price-block {
     display: flex;
     gap: 40px;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .block {
     height: auto;
     width: 500px;
-    /* margin: 0 auto; */
 }
 
 .plan-type {
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 20px;
+    color: #343a40;
 }
 
 .bold-price {
     font-size: 42px;
     font-weight: bold;
-    color: #212529;
+    color: #343a40;
     display: inline-block;
     margin-bottom: 10px;
 }
@@ -76,8 +80,12 @@
     color: white;
     padding: 15px 50px;
     border-radius: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     cursor: pointer;
+}
+
+.buy-plan-btn:hover {
+    background-color: #1c296b;
 }
 
 .price-discount {
@@ -88,14 +96,14 @@
 .feature-desc {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 25px;
-    color: #212529;
+    margin-bottom: 20px;
+    color: #343a40;
+    line-height: 1.5;
 }
 
 .feature-list {
     font-size: 14px;
-    color: #343a40;
-    line-height: 1.8;
+    color: #343a40; 
 }
 
 .feature-li-item {
@@ -104,7 +112,7 @@
     align-items: center;
     align-self: center;
     gap: 10px;
-    line-height: 2.2;
+    line-height: 2.5;
 }
 
 .tick-icon {

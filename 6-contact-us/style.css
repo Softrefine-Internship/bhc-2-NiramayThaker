@@ -11,11 +11,37 @@ body {
     /* background-image: linear-gradient(#fff, #ced4da , #b197fc, #845ef7); */
     height: 100vh;
 }
+
 .container {
     width: 1200px;
     margin: 100px auto;
     height: auto;
     /* background-color: #343a40; */
+}
+
+.blur-clr {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.blur-clr--blue {
+    background-color: rgba(123, 22, 238, 0.1);
+    filter: blur(40px);
+    -webkit-filter: blur(50px);
+    top: 0;
+    right: 55%;
+}
+
+.blur-clr--pink{
+    height: 300px;
+    width: 350px;
+    background-color: rgba(238, 22, 238, 0.1);
+    filter: blur(40px);
+    -webkit-filter: blur(50px);
+    top: 2%;
+    left: 0;
 }
 
 .heading {
@@ -56,9 +82,10 @@ body {
 .name-inp {
     width: 404px;
     height: 35px;
-    border: solid 2px #adb5bd;
+    border: solid 2px #dcdfe2;
     border-radius: 5px;
-    background-color: #fff
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .other-fields {
@@ -75,9 +102,11 @@ body {
     width:84%;
     height: 35px;
     padding: 20px;
-    border: solid 2px #adb5bd;
+    border: solid 2px #dcdfe2;
     border-radius: 5px;
     background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
 }
 
 .field {
@@ -92,6 +121,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
+    gap: 10px;
 }    
 
 .policy-btn {
@@ -112,7 +142,72 @@ body {
     color: #1864ab;
     font-size: 12.5;
 }
+.policy-link:hover {
+    color: #092744;
+}
 
+
+/* Toggle btn  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
 /* submit button  */
 .submit-btn {
     display: inline-block;
@@ -127,4 +222,9 @@ body {
     border-radius: 10px;
     text-align: center;
     margin-top: 35px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: #092744;
 }

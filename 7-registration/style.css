@@ -9,7 +9,7 @@
 body {
     width: 1200px;
     margin: 10px auto;
-    background-color: #f1f3f5;
+    background-color: #f6f8fc;
 }
 
 .container {
@@ -18,8 +18,9 @@ body {
 }
 
 .main-logo {
-    width: 30px;
-    height: 20px;
+    width: 50px;
+    height: 30px;
+    margin: 0 auto;
 }
 
 .heading {
@@ -42,7 +43,8 @@ body {
     margin: 0 auto;
     padding: 100px;
     border: none;
-    box-shadow: 0 1px 2px 0.001px;
+    /* box-shadow: 0 1px 2px 0.001px; */
+    box-shadow: rgba(186, 191, 196, 0.2) 0px 8px 24px;
     border-radius: 10px;
 }
 
@@ -56,7 +58,7 @@ body {
 .inp {
     height: 40px;
     width: 100%;
-    border: 0.5px solid #adb5bd;
+    border: 0.5px solid #c1c6cc;
     border-radius: 10px;
 }
 
@@ -81,6 +83,7 @@ body {
 .remember-me-btn {
     height: 15px;
     width: 15px;
+    cursor: pointer;
 }
 
 .forgot-pswd-link {
@@ -89,6 +92,9 @@ body {
     float: right;
     font-weight: bold;
     color: #364fc7;
+}
+.forgot-pswd-link:hover {
+    color: #15215a;
 }
 
 .submit-div {
@@ -106,6 +112,10 @@ body {
     height: auto;
     cursor: pointer;
     border: none;
+}
+
+.submit-btn:hover {
+    background-color: #0b1441;
 }
 
 .or-sec {
@@ -154,6 +164,10 @@ body {
     font-weight: bold;
 }
 
+.tw-or-btn:hover {
+    background-color: #0f5681;
+}
+
 .git-or-btn {
     background-color:#24292e;
     color: white;
@@ -163,6 +177,10 @@ body {
     gap: 10px;
     font-size: 16px;
     font-weight: bold;
+}
+
+.git-or-btn:hover {
+    background-color: #000;
 }
 
 
@@ -179,4 +197,8 @@ body {
 .trial-link {
     text-decoration: none;
     color: #364fc7;
+}
+
+.trial-link:hover {
+    color: #0b1441;
 }

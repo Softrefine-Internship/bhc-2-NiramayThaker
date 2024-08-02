@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
     <div class="container">
+
+      <div class="blur-clr blur-clr--pink"></div>
+      <div class="blur-clr blur-clr--blue"></div> 
 
       <header class="heading">
         <div class="main-heading">
@@ -49,7 +56,8 @@
 
             <div class="field">
               <span class="input-fields">Phone number</span>
-              <input type="contact" class="inp" placeholder="US 🔽">
+              <input id="phone" type="tel" name="phone" class="inp" />
+              <!-- <input type="contact" class="inp" placeholder="US 🔽"> -->
             </div>
           </div>
           
@@ -58,11 +66,17 @@
             <!-- <input type="text" class="inp"> -->
 
             <textarea name="" id="" class="inp" style="height: 150px; width: 84%;"></textarea>
-          </div>        
+          </div>      
           <div class="policy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-off policy-btn" viewBox="0 0 16 16">
+            <div class="toggle">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>  
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-off policy-btn" viewBox="0 0 16 16">
               <path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/>
-            </svg>
+            </svg> -->
             <p class="policy-desc">
               By selecting this, you agree to our 
               <a href="#" class="policy-link">privacy policy</a>
@@ -78,4 +92,14 @@
     </section>    
     </div>
   </body>
+
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+  
+
 </html>

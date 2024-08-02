@@ -16,14 +16,23 @@
 .team-communication {
     height: 350px;
     width: 600px;
-    margin: 10px auto;
+    margin: 0 auto;
+}
+
+.main-img {
+    height: 350px;
+    width: 600px;
+}
+
+.main-img:hover .team-communication {
+    opacity: 0.3;
 }
 
 .info {
     height: 350px;
     width: 600px;
     background-color: #021526;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 80px;
 }
 
@@ -53,4 +62,9 @@
     font-size: 12px;
     font-weight: bold;
     background-color: #343a40;
+    border-radius: 5px;
+}
+
+.help-center:hover {
+    color: #6EACDA;
 }
